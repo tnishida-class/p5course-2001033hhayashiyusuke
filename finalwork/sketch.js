@@ -60,11 +60,11 @@ fill(151,155,191);
 function mouseClicked(){
 
     if(mouseY<windowHeight/2){
-      const b = { x: mouseX, y: mouseY, size: 30, vx: 0, vy: 2 };
+      const b = { x: mouseX, y: mouseY, size: random(20,30), vx: 0, vy: 2 };
       balls.push(b);
 }
 else {
-  const b2 = { x: mouseX, y: mouseY, size: 20, vx: 2, vy: 4 };
+  const b2 = { x: mouseX, y: mouseY, size: random(5,15), vx: 2, vy: 4 };
   balls2.push(b2);
 }
 }
